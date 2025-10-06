@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udit Narayan - React Developer</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">UN</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+                🌙
+            </button>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>UDIT NARAYAN</h1>
+            <h2>React Developer | Software Engineer | Frontend Developer</h2>
+            <p>Dedicated and highly skilled Software Engineer experienced in MERN Stack Development. Fast learner and
+                ready to create amazing web experiences.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-secondary">View Projects</a>
+            </div>
+        </div>
+        <button class="carousel-nav prev" onclick="changeSlide(-1)">‹</button>
+        <button class="carousel-nav next" onclick="changeSlide(1)">›</button>
+        <div class="carousel-indicators">
+            <span class="indicator active" onclick="goToSlide(0)"></span>
+            <span class="indicator" onclick="goToSlide(1)"></span>
+            <span class="indicator" onclick="goToSlide(2)"></span>
+            <span class="indicator" onclick="goToSlide(3)"></span>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Frontend Technologies</h3>
+                <div class="skill-tags">
+                    <span class="tag">React.js</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Redux</span>
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">Bootstrap</span>
+                    <span class="tag">Tailwind CSS</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Backend Technologies</h3>
+                <div class="skill-tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express.js</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">NoSQL</span>
+                    <span class="tag">SQL</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Other Technologies</h3>
+                <div class="skill-tags">
+                    <span class="tag">DSA</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">GitHub</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">C</span>
+                    <span class="tag">Canva</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="experience-timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">Aug 2024 – Present</div>
+                    <h3 class="timeline-title">Software Engineer</h3>
+                    <p><strong>Corefront Technologies Pvt Ltd</strong></p>
+                    <ul>
+                        <li>Built and deployed fully responsive websites using React.js</li>
+                        <li>Developed UI components with React functional components and Hooks</li>
+                        <li>Implemented React Router and Axios for navigation and API integration</li>
+                        <li>Optimized performance using code splitting and lazy loading</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">May 2024 – Aug 2024</div>
+                    <h3 class="timeline-title">MERN Stack Developer Intern</h3>
+                    <p><strong>Devnati Technologies</strong></p>
+                    <ul>
+                        <li>Developed responsive websites using MERN Stack</li>
+                        <li>Built Khaleejsooq website for real estate business</li>
+                        <li>Worked with React.js, Redux, Tailwind CSS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">Sep 2023 – Dec 2023</div>
+                    <h3 class="timeline-title">Software Engineer Intern</h3>
+                    <p><strong>Etrix Technologies</strong></p>
+                    <ul>
+                        <li>Designed and developed software solutions</li>
+                        <li>Deployed applications using various platforms</li>
+                        <li>Built company website for Shreysun Global</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">Mar 2023 – Apr 2023</div>
+                    <h3 class="timeline-title">Software Engineer Intern</h3>
+                    <p><strong>Learntricks Edutech</strong></p>
+                    <ul>
+                        <li>Managed project workflows and schemas</li>
+                        <li>Solved 100+ logical programming questions using Python</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Recent Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>C.R.M Admin/Employee Panel</h3>
+                </div>
+                <div class="project-body">
+                    <p>Comprehensive Admin and Employee Panel with role-based access control, CRUD operations, leave
+                        management, and secure authentication.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">MERN Stack</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Nafeeza Maritime Website</h3>
+                </div>
+                <div class="project-body">
+                    <p>Complete website with frontend and student login system including backend functionality.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Devnati Technologies Website</h3>
+                </div>
+                <div class="project-body">
+                    <p>Professional company website showcasing services and portfolio.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>TODO List Application</h3>
+                </div>
+                <div class="project-body">
+                    <p>Responsive web app with full CRUD operations for task management.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">Local Storage</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <h2 class="section-title" style="color: white;">Get In Touch</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem;">I'm currently available for freelance work and full-time
+            opportunities</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div>
+                    <strong>Email</strong>
+                    <p>udit012435@gmail.com</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📱</div>
+                <div>
+                    <strong>Phone</strong>
+                    <p>8810878157</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                    <strong>Location</strong>
+                    <p>Kanpur, Uttar Pradesh</p>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="#" class="social-link" title="LinkedIn">💼</a>
+            <a href="#" class="social-link" title="GitHub">💻</a>
+            <a href="#" class="social-link" title="Email">✉️</a>
+        </div>
+    </section>
+<script src="index.js"></script>
+</body>
+
+</html>
